@@ -1,0 +1,107 @@
+* {
+    margin: 0;/* بيشيل المسافات الخارجيه */
+    padding: 0;/* بيشيل المسافات الداخليه */
+    box-sizing: border-box;/* بيحسب الحجم بشكل ادق */
+    font-family: 'Arial', sans-serif;/* بيحدد نوع الخط */
+}
+
+body {
+   
+    display: flex;/* ترتيب المحنوى بفلكس */
+    justify-content: center;/* توسيط افقى */
+    align-items: center;/* توسيط عمودى */
+    min-height: 100vh;/* بيخلى الصفحه بطول الشاشه */
+    background-color: #ffe6e6;/* لون الخلفيه */
+}
+
+.contact-container {
+    display: flex;/* بيخلى العناصر جمب بعض */
+    width: 800px;/* عرض الحاويه */
+    position: relative;/*  عشان نستخدم absoluteجواهم */
+}
+
+.contact-info {
+    width: 40%;
+    background-color: #085658;
+    color: white;
+    padding: 90px 30px;
+    position: absolute;/* لتحديد مكانه بالظبط */           
+    left: 0;/* يلزق فى الشمال */
+    top: 50%;/* ينزل لنص الحاويه */
+    transform: translateY(-50%);/* يطلع فوق شويه */
+    z-index: 2;/* يظهر فوق */
+    height: auto;/* الطول حسب المحتوى */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);/* عشان يدى ظل خفيف */
+    border-radius: 5px;/* عشان الحواف تبقى مدوره سنه صغيره */
+}
+
+.contact-form {
+    width: 75%;
+    background-color: white;
+    padding: 40px;
+    margin-left: auto;
+    padding-left: 160px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);/* عشان ظل */
+    position: relative;/* عشان z-index */
+    z-index: 1;/* يخليه ورا ال info */
+    border-radius: 5px;/* يخليه ورا ال info */
+}
+
+h2 {
+    font-size: 28px;/* حجم العنوان */
+    margin-bottom: 20px;/* حجم العنوان */
+}
+
+.form-title {
+    color: #040705;/* لون العنوان */
+}
+
+.form-subtitle {
+    color: #aaa;/* لون رمادى */
+    margin-bottom: 40px;/* لون رمادى */
+}
+
+.info-item {
+    display: flex;/* يخلى الايقونه والنص جمب بعض */
+    align-items: center;/* يظبطهم عموديا */
+    margin-bottom: 20px;/* مسافه بين العناصر */
+}
+
+.info-item .icon {
+    margin-right: 15px;/* مسافه بين الايقون والنص */
+}
+
+.form-group {
+    margin-bottom: 20px;/* مسافه بين كل حقل  */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;/* بدون حدود */
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+textarea {
+    height: 120px;/* ارتفاع المربع */
+    resize: none;/* يمنع تغيير الحجم */
+}
+
+.submit-btn {
+    background-color: #085154;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;/* زر دائرى */
+    cursor: pointer;/* شكل الماوس يد */
+    font-size: 16px;
+    transition: background-color 0.3s;/* تغير اللون بسلاسه */
+}
+
+.submit-btn:hover {
+    background-color: #93a3a3;/* لون جديد عند المرور */
+}

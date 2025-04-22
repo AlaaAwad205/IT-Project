@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8"> <!-- عشان احدد اللغه -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عشان يشتغل على الموبايل والشاشات الصغيره -->
+    <title>Contact Us Form</title><!-- عنوان الصفحه -->
+    <link rel="stylesheet" href="contactstyle.css"><!-- لربط ال css ب ال html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- عشان نستخدم ال font aussm -->
+</head>
+
+<body>
+    <!-- الحاويه الرئسيه للصفحه -->
+    <div class="contact-container">
+
+
+        <!-- الجزء الخاص بنمذج التواصل -->
+        <div class="contact-form">
+
+            <h2 class="form-title">Get in Touch</h2><!-- عنوان الفورم -->
+            <p class="form-subtitle">Feel free to drop us a line below!</p><!-- وصف بسيط -->
+
+            <form><!-- بداية الفورم اللى فيه خانات الادخال -->
+
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required><!-- خانه ادخال الاسم -->
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required><!-- خانه ادخال الايميل  -->
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Typing your message here...." required></textarea><!-- خانة الرساله -->
+
+                </div>
+                <button type="submit" class="submit-btn">SEND</button><!--زر الارسال -->
+            </form>
+        </div>
+
+        <!-- الجزء الخاص بمعلومات التواصل الثابته -->
+        <div class="contact-info">
+            <h2>Contact Us</h2><!-- عنوان القسم  -->
+
+            <!-- عنصر عنوان المكان  -->
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i><!-- ايقونه المكان  -->
+                </div>
+
+                <div>
+                    <div>32, Avenue ve Newyork</div><!-- سطر العنوا الاول -->
+                    <div>321994 Newyork</div><!--سطر العنوان التانى -->
+                </div>
+            </div>
+
+            <!-- عنصر البريد الالكترونى -->
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i><!-- ايقونة الايميل -->
+                </div>
+                <div>hello@loremipsum.com</div><!-- الايميل -->
+            </div>
+
+            <!-- عنصر رقم التليفون -->
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i><!-- ايقونه الموبايل -->
+                </div>
+                <div>+3356 1589 2105</div><!-- رقم الهاتف -->
+            </div>
+
+            <!-- رقم الفون الارضى او الفاكس -->
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fa-solid fa-print" style="color: #ffffff;"></i><!-- ايقونه الفاكس -->
+                </div>
+                <div>+3356 1589 2100</div><!-- رقم الفاكس -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
