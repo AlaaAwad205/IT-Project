@@ -1,0 +1,122 @@
+/* Reset أساسي */
+* {
+    margin: 0;/*يشيل المسافات الخارجية لكل العناصر.*/
+    padding: 0;/*بيشيل المسافات الداخليه لكل العناصر*/
+    box-sizing: border-box;/* نخلي حجم العنصر يشمل البادينج والبوردر معاه */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;/* بنختار نوع الخط اللي هيظهر في الصفحة.*/
+    color: white;/*خلي النص لونه أبيض عشان يكون واضح على الخلفية الغامقة*/
+  }
+  
+  /* ================= NAVBAR ================= */
+.navbar{
+    display: flex;/*بيخلي العناصر يترتبوا جنب بعض (اللوجو,اللينكات,الزرار )*/
+
+    justify-content: space-between;/*بيعمل مسافه بين العناصر بحيث يكون اللوجو علي اليمين واللينكات والزرار ع الشمال */
+
+    align-items: center;/*بيخلي العناصر تتوسط راسيا ع نفس الخط  بظبط*/
+
+    padding: 20px 45px;/*بيدي مسافة داخلية حوالي 20px فوق وتحت، و50px يمين وشمال.*/
+    background-color: rgb(0, 0, 0,0.7);
+    color: white;
+    position: relative;/*علشان ممكن بعدين نستخدمه مع عناصر تتحرك فوقه.*/
+    z-index: 1000;/*بيخلي الـ navbar يبان فوق أي عناصر تانية.*/
+
+
+}
+.navbar .logo{
+    font-size: 39px;/*بيكبر حجم الخط بتاع اللوجو*/
+    font-weight: bold;/*بيخلي الخط سميك*/
+    color: orange;/*لون اللوجو برتقالي*/
+    transition: 0.5s;
+}
+.navbar .logo:hover{
+    letter-spacing: 1px;
+}
+.nav-links{
+    display: flex;/*ده عشان الينكات كلها تبقي جنب بعض*/
+    gap: 50px;/*يعمل مسافه بين اللينكات عشان متكنش لازقه ي بعض*/
+    list-style: none;/*بيشيل النقط الي بتظهر قدام العناصر*/
+}
+.nav-links a{
+    text-decoration: none;/*عشان يشيل الخط الي موجود تحت اللينك*/
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;/*يخلي التغيير في اللون عند الـ hover يكون بطيئ شويه*/
+}
+.nav-links a:hover{
+    color: orange;
+    letter-spacing: 1.5px; /*عشان يعمل تباعد بين الحروف في الناف بار*/
+}
+.hero{
+    background-image: url(img/home_bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero::before{
+    content: "";/*السطر ده لازم مع ::before أو 
+    ::after عشان يظهر العنصر. حتى لو مش هتكتب أي نص، لازم تحط ""،
+     وبدونه مش هيظهر العنصر.*/
+    position: absolute;
+/*دي بتخلي الطبقة دي تقدر تتحرك بحرية جوه عنصر الـ .hero، وتكون متعلقة بمكانه.
+
+لكن علشان ده يشتغل صح، لازم .hero نفسه يكون فيه: position relative*/
+
+    top: 0; left: 0; right: 0; bottom: 0;/*ده معناه إننا بنفرد الطبقة دي على كل مساحة العنصر الأب 
+    (.hero)، يعني الطبقة هتغطي الـ background بالكامل.*/
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;/*ده بيقول للمتصفح إن الطبقة دي تكون وراء النصوص 
+    (لأن النصوص عندهم z-index أعلى بـ default)*/
+}
+.hero-text {
+    position: relative;
+    z-index: 1;/* عشان نخلي النص ييجي فوق طبقة التعتيم*/
+  }
+  .hero-text h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;/*مسافة بين العنوان والفقره الي تحته*/
+    color:orange;
+    transition: 0.5s;
+  }
+  .hero-text h1:hover{
+    letter-spacing: 1px;
+  }
+  .hero-text p{
+    font-size: 28px;
+    margin-bottom: 20px;/*مسافة بين الفقرة والزر.*/
+  }
+  .hero-text a.btn {
+    background-color: orange;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition:  0.5s;
+  }
+  .hero-text a.btn:hover {
+    background-color: rgb(175, 126, 34);
+    letter-spacing: 1px;
+  }
+  
+  
+  
+
+
+  
+  
+
+
+
+ 
+
+     

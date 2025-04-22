@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=UTF-8">
+    <title>Register</title>
+    <style>
+         body {
+            background-color:black;
+            height: 100vh;
+
+        } 
+          
+        .register-box {
+            background-color: rgb(243, 209, 147);
+            width: 400px;
+            height: 500px;
+            border-radius: 70px 10px;
+            text-align: center;
+            /* margin: auto; */
+
+        }
+
+        .register-button {
+            background-color: red;
+            width: 170px;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            /* cursor: pointer; */
+            margin: 10px 0;
+            /* transition: background-color 0.3s; */
+            
+        }
+
+        .main-continer {
+            display: flex;
+            /* to aligin content in center horizantal */
+            justify-content: center;
+             /* to aligin content in center vertical */
+            align-items: center;
+            height: 100vh;
+        }
+         .register-box input[type="email"],
+        .register-box input[type="password"],
+        .register-box input[type="text"] {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-continer">
+
+        <div class="register-box">
+            <h2>Create a New Account</h2>
+            <form>
+                <input type="text" placeholder="full name">
+                <br><br>
+                <input type="email" placeholder="email">
+                <br><br>
+                <input type="password" placeholder="password">
+                <br><br>
+                <input type="password" placeholder="Confirm password">
+                <br><br>
+                <button type="submit" class="register-button">register</button>
+            </form>
+            <p>Already have an account ? <a href="login.html">login </a></p>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
