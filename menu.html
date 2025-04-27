@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Lover menu </title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="menu.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 id="menu-title">Our Menu</h2>
+    <div class="menu-items">
+      <button class="category-button" data-category="appetizers">
+        <h3>Appetizers</h3>
+        <i class="fas fa-bowl-food"></i>
+      </button>
+      <button class="category-button" data-category="mainCourse">
+        <h3>Main Courses</h3>
+        <i class="fa-solid fa-utensils"></i>
+      </button>
+      <button class="category-button" data-category="dessert">
+        <h3>Desserts</h3>
+        <i class="fa-solid fa-cheese"></i>
+      </button>
+      <button class="category-button" data-category="beverage">
+        <h3>Beverages</h3>
+        <i class="fa-solid fa-martini-glass-citrus"></i>
+      </button>
+      <button onclick="alert('press OK to Complete your purchase'); completePurchase()" class="cart">
+        <h3>cart </h3>
+        <i class="fas fa-shopping-cart"></i>
+        <span id="itemsInCart">0</span>
+      </button>
+    </div>
+    <div class="menu-category" data-category="appetizers" id="default" style="display: block;">
+      <h3>Appetizers</h3>
+      <ul class="ul-items">
+        <div class="menu-item-box">
+          <li>
+            <h4>Bruschetta $8</h4>
+          </li>
+          <button onclick="addToCart(); alert('Done!&#x1F44D;')" class="cart-btn">add to cart</button>
+          <p>Toasted bread with tomato, basil, and garlic</p>
+          <img src="img/offer1.png" alt="Bruschetta">
+        </div>
+        <div class="menu-item-box">
+          <li>
+            <h4>Spinach and Artichoke Dip $10</h4>
+          </li>
+          <button onclick="addToCart(); alert('Done!&#x1F44D;')" class="cart-btn">add to cart</button>
+          <p>Creamy dip with spinach, artichokes, and Parmesan</p>
+          <img src="photos/Spinach and Artichoke Dip.jfif" alt="Spinach and Artichoke Dip">
+      </ul>
+    </div>
+    <div class="menu-category" data-category="mainCourse">
+      <h3>Main Courses</h3>
+      <ul class="ul-items">
+        <div class="menu-item-box">
+          <li>
+            <h4>Spaghetti Carbonara $15</h4>
+          </li>
+          <button onclick="addToCart(); alert('Done!&#x1F44D;')" class="cart-btn">add to cart</button>
+          <p>Spaghetti with eggs, hard cheese, pancetta, and black pepper</p>
+          <img src="photos/Spaghetti Carbonara.jfif" alt="Spaghetti Carbonara">
+        </div>
+        <div class="menu-item-box">
+          <li>
+            <h4>Grilled Salmon $20</h4>
+          </li>
+          <button onclick="addToCart(); alert('Done!&#x1F44D;')" class="cart-btn">add to cart</button>
+          <p>Fresh salmon fillet with lemon and herbs</p>
+          <img src="photos/Grilled Salmon.jfif" alt="Grilled Salmon">
+        </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
