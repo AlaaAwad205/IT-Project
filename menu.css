@@ -1,0 +1,120 @@
+@media (max-width: 768px){
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+    line-height: 1.6;
+  }  
+
+
+
+
+.menu-items button{
+    padding: 10px 20px ;
+    border: none;
+    border-radius: 6px 12px;
+    color: white;
+    background-color: #ff7b00;
+    box-align: center;
+
+}
+.menu-items button:hover{
+    color:#ffc800;
+    background-color: #ff4d00;
+    transform: 0.5s scale(1.1);
+    border-radius: 12px 6px;
+    cursor: pointer;
+}
+.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+#menu-title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 4px 2px #fd7777;
+    margin: 25px 0px;
+  }
+
+.menu-category h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px #F08080;
+
+}
+.menu-category {
+    margin: 20px 0px;
+    text-align: center;
+    display: none;
+}
+.menu-item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+  box-shadow: 37px 25px 24px -21px rgb(0 0 0 / 52%);
+  background-color: #00000075;
+  border-radius: 15px;
+    margin: 10px 0px;
+    text-align: center;
+  
+} 
+.menu-item-box img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 50%;
+  }
+.ul-items{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    align-items: center
+    flex-wrap: wrap;
+    list-style: none;
+}
+#itemsInCart{
+    font-size: 15px;
+    color: #fde9e2;
+    font-weight: 750;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 8px;
+    margin-left: -10px;
+}
+.fas.fa-shopping-cart{
+    font-size: 20px;
+    color: #FFA07A;
+    font-weight: 700;
+}
+.cart-btn {
+    background-color:  #00BFFF;
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 30%;
+}
